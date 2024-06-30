@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CALCULATOR</title>
+        <link type="icon" href="C:\Users\surya\Pictures\download.jpg">
+        <style>
+         #maindiv:hover{
+           
+           background-color:rgba(207, 38, 38,0.5);
+         }
+          
+         #maindiv{
+            text-align:center;
+            background-color:rgba(207, 38, 38,0.1);
+            padding: 5%;
+            margin-top:3%;
+            width:25%;
+            margin-left: 30%;
+            height:70%;
+            border-radius: 50px;
+         }
+         #middiv{
+            background-color: rgba(179,170,56,0.1);
+            padding: 15%;
+            margin:2%;
+            border-radius: 200px;
+         }
+         button{
+            padding:2px;
+            margin:2px;
+            background-color:white;
+            color:black;
+            font-size:25px;
+            font-family:monospace;
+            width:30px;
+         }
+         button:hover{
+            background-color:black;
+            color:white;
+            font-size:20px;
+            width:35px;
+         }
+         #txt{
+            margin:5px;
+            height:20px;
+            width:80%;
+            font-size:20px;
+            font-family:monospace;
+            
+         }
+        </style>
+        <script>
+            function evl(a)
+            {
+               txt.value=eval(a);
+               
+            }
+           
+        </script>
+    </head>
+ <body>
+  <div id="maindiv">
+    
+        <div id="middiv">
+            <input type="text" id="txt" placeholder="calculate...">
+            <div>
+            <button onclick="txt.value+='1'">1</button>
+            <button onclick="txt.value+='2'">2</button>
+            <button onclick="txt.value+='3'">3</button>
+            <button onclick="txt.value+='+'">+</button>
+            </div>
+            <div>
+            <button onclick="txt.value+='4'">4</button>
+            <button onclick="txt.value+='5'">5</button>
+            <button onclick="txt.value+='6'">6</button>
+            <button onclick="txt.value+='-'">-</button>
+            </div>
+            <div>
+            <button onclick="txt.value+='7'">7</button>
+            <button onclick="txt.value+='8'">8</button>
+            <button onclick="txt.value+='9'">9</button>
+            <button onclick="txt.value+='*'">*</button>
+            </div>
+             <div>
+                      
+            <button onclick="txt.value+='0'">0</button>
+            <button onclick="txt.value+='/'">/</button>
+            <button onclick="evl(txt.value)">=</button>
+            </div>
+            <div><button onclick="txt.value=''" style="width:75px;">clear</button>  </div>
+        </div>
+    </div>
+ </body>
+</html>
